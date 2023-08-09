@@ -1,0 +1,123 @@
+.movies-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #d3ded6;
+  border-radius: 10px;
+  padding: 45px;
+  /* border: 1px solid white; */
+}
+.Heading-Movie-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.search-bar {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  height: 35px;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .search-bar {
+    max-width: 1030px;
+    height: 40px;
+  }
+}
+.search-input {
+  flex-grow: 1;
+  background-color: #ffffff;
+  border: none;
+  padding: 4px 4px 4px 15px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #000000;
+  width: 100vw;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .search-input {
+    font-size: 16px;
+  }
+}
+.search-button {
+  width: 15%;
+  background-color: #000000;
+  border: none;
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  font-family: Roboto;
+}
+.movie-heading {
+  font-family: Roboto;
+  font-weight: 600;
+  color: #6e6f70;
+}
+.movies-loader-container {
+  /* border: 1px solid white; */
+  flex-grow: 1;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jobs-api-failure-container,
+.no-movies-container {
+  flex-grow: 1;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+
+  width: 80%;
+  margin: auto;
+}
+
+.failure-view-heading,
+.no-jobs-heading {
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: 500;
+}
+.failure-view-description,
+.no-jobs-description {
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.movies-loader-container {
+  /* border: 1px solid white; */
+  flex-grow: 1;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movies-list {
+  padding-left: 0;
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
